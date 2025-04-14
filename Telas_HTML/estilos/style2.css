@@ -22,6 +22,15 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+header{
+    height: 100%;
+    width: 500px;
+    background-color: var(--corLogo--);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 ul{
     list-style-type: none;
     margin-top: 10px;
