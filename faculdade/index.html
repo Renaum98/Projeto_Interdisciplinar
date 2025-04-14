@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+</head>
+<body>
+    <span class="material-symbols-outlined" id="menu-icon">menu</span>
+
+    <header id="menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Solicitar</a></li>
+                <li><a href="historico.html">Histórico</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       <!--<img src="img/logo.png" alt="logotipo da marca" width="200">-->
+        <section class="caixa-principal">
+            <form action="#" method="post" id="form">
+                <fieldset>
+                    <legend>Usuário</legend>
+                    <select name="usuarios" id="id-us" required>
+                        <option value="" selected disabled>Escolha um Usuário</option>
+                        <option value="André Paulo">André Paulo</option>
+                        <option value="Maria de Andrade">Maria de Andrade</option>
+                        <option value="Elisabeth Olsen">Elisabeth Olsen</option>
+                        <option value="Marcio Andrade">Marcio Andrade</option>
+                        <option value="Givanildo Soares">Givanildo Soares</option>
+                        <option value="Michael Jackson">Michael Jackson</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Equipamento</legend>
+                    <select name="equipamentos" id="id-eq" required>
+                        <option value="" selected disabled>Escolha um Equipamento</option>
+                        <optgroup label="Mouse">
+                            <option value="Mouse Logitech">Mouse Logitech</option>
+                            <option value="Mouse Razer 1200dpi">Mouse Razer 1200dpi</option>
+                        </optgroup>
+                        <optgroup label="Monitor">
+                            <option value="Monitor LG 23pl">Monitor LG 23pl</option>
+                        </optgroup>
+                        <optgroup label="Notebook">
+                            <option value="Notebook i7 rtx4060 23pl">Notebook i7 rtx4060 23pl</option>
+                            <option value="Notebook i5 Radeon750 20pl">Notebook i5 Radeon750 20pl</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Data de Retirada</legend>
+                    <input 
+                    type="date" 
+                    name="" 
+                    id="id-data" 
+                    required>
+                </fieldset>
+                <button type="button" id="botao-enviar" onclick="botaoEnviar()">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <script defer src="script/script.js"></script>
+</body>
+</html>

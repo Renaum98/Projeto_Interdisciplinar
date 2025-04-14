@@ -1,0 +1,125 @@
+:root {
+    --corLogo--: #455561;
+    --corFundo--: #ffff;
+    --corDetalhe--: #D71946;
+    --corSecundaria1--: #949ca3;
+    --corSecundaria2--: #e4e5e6;
+    --corSecundaria3--: #b8aca5;
+    --corSegundaria4--: #d8cfc9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--corSecundaria3--);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    list-style-type: none;
+    margin-top: 10px;
+}
+li{
+    border-bottom: 1px solid var(--corSecundaria1--);
+    cursor: pointer;
+    padding: 5px 0;
+    text-align: center;
+}
+li:hover,
+#caixa_lista_itens>div:hover{
+    background-color: var(--corSecundaria1--);
+    color: var(--corSecundaria2--);
+    transition: .2s;
+}
+li:active,
+#caixa_lista_itens>div:active,
+#botoes>button:active{
+    background-color: var(--corDetalhe--);
+    color: var(--corSecundaria2--);
+}
+aside{
+    background-color: var(--corSecundaria2--);
+    height: 90%;
+    width: 400px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 10px 10px var(--corLogo--);
+}
+main{
+    width: 70%;
+    height: 90%;
+    margin-right: 30px;
+    
+}
+#email_exibicao{
+    width: 100%;
+    background-color: var(--corSecundaria2--);
+    margin-bottom: 10px;
+    padding: 30px 0px;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 10px;
+}
+#caixa_lista_itens{
+    height: 67%;
+    background-color: var(--corSecundaria2--);
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#caixa_lista_itens>div{
+    padding: 5px;
+}
+
+#botoes{
+    width: 100%;
+    padding: 30px 0px;
+    margin-top:10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+#botoes>button{
+    width: 200px;
+    padding: 15px 0;
+    background-color: var(--corLogo--);
+    color: var(--corFundo--);
+    box-shadow: 5px 5px var(--corSecundaria1--);
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    overflow: hidden;
+}
+input[type="checkbox"]:checked:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--corLogo--);
+    position: absolute;
+    border-radius: 2px;
+}
+.qtde{
+    display: inline;
+}
+span {
+    background-color: var(--corSecundaria1--);
+    color: var(--corSecundaria2--);
+    padding: 5px;
+    border-radius: 10px;
+}
