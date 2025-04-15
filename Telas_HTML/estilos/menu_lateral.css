@@ -1,0 +1,64 @@
+:root {
+    --corLogo--: #455561;
+    --corFundo--: #ffff;
+    --corDetalhe--: #D71946;
+    --corSecundaria1--: #949ca3;
+    --corSecundaria2--: #e4e5e6;
+    --corSecundaria3--: #b8aca5;
+    --corSecundaria4--: #d8cfc9;
+}
+
+header{
+    background-color: var(--corLogo--);
+    height: 100%;
+    width: 200px;
+    border-radius: 0 10px 10px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#menu-icon{
+    color: var(--corSecundaria3--);
+    padding: 6px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color .5s ease-in-out;
+    backdrop-filter: blur(10px);
+    background-color: var(--corLogo--);
+}
+#menu-icon:active{
+    background-color: var(--corDetalhe--);
+}
+
+#lista_menu_pai{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2rem;
+    border: none;
+}
+#lista_menu_pai > li{
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+#lista_menu_pai > li:hover{
+    background-color: var(--corSecundaria1--);
+    transition: 1s;
+}
+.lista_menu_filhos{
+    color: var(--corFundo--);
+    font-weight: 400;
+    text-decoration: none;
+}

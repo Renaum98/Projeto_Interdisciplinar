@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="estilos/style4.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="estilos/menu_lateral.css"> <!--Adicionei o estilo do menu lateral somente-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <title>Historico</title>
 </head>
 <body>
+  <span class="material-symbols-outlined" id="menu-icon">menu</span>
+  <header>
+      <nav id="lista_menu">
+          <ul id="lista_menu_pai">
+              <li>
+              <a href="tela2.html" class="lista_menu_filhos">Solicitar</a><!--fiz o link do menu com as paginas-->
+              </li>
+              <li>
+                  <a href="tela4.html" class="lista_menu_filhos">Histórico</a>
+              </li>
+          </ul>
+      </nav>
+  </header>
+  <main>
     <table>
-      
-        <tr class="header_table">
-          <th>Solicitante</th>
-          <th>Usuário</th>
-          <th>Equipamento</th>
-          <th>Data de Retirada</th>
-          <th>Aprovador</th>
-          <th>Status</th>
-          <th>Data de Devolução</th>
-        </tr>
-
-        <tr>
+        <thead>
+          <tr class="header_table">
             <th>Solicitante</th>
             <th>Usuário</th>
             <th>Equipamento</th>
@@ -28,16 +34,21 @@
             <th>Status</th>
             <th>Data de Devolução</th>
           </tr>
-
+        </thead>
+        <!--Adicionei o tbody e thead pra melhor entendimento-->
+        <tbody>
           <tr>
-            <th>Solicitante</th>
-            <th>Usuário</th>
-            <th>Equipamento</th>
-            <th>Data de Retirada</th>
-            <th>Aprovador</th>
-            <th>Status</th>
-            <th>Data de Devolução</th>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
           </tr>
+        </tbody>
     </table>
+  </main>
+    <script src="script/tela2.js" defer></script>
 </body>
 </html>
