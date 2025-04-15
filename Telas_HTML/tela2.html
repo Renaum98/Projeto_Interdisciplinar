@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela2</title>
+    <title>Tela Inicial</title>
     <link rel="stylesheet" href="estilos/style2.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 
 </head>
 <body>
-    <span class="material-symbols-outlined" id="menu-icon">menu</span>
     <header>
+        <span class="material-symbols-outlined" id="menu-icon">menu</span>
         <nav id="lista_menu">
-            <ul>
+            <ul id="lista_menu_pai">
                 <li>Solicitar</li>
                 <li>Histórico</li>
             </ul>
@@ -20,11 +20,11 @@
     </header>
     <aside>
         <ul>
-            <li id="opc1" onclick="mudarEmailNaTela(opc1)">antonio.cabral@empresa.com</li>
-            <li id="opc2" onclick="mudarEmailNaTela(opc2)">michael_jackson2010@empresa.com</li>
-            <li id="opc3" onclick="mudarEmailNaTela(opc3)">joao.silva@empresa.com</li>
-            <li id="opc4" onclick="mudarEmailNaTela(opc4)">maria_sena@empresa.com</li>
-            <li id="opc5" onclick="mudarEmailNaTela(opc5)">jason.matador@empresa.com</li>
+            <li id="opc1" class="opc_email" onclick="mudarEmailNaTela(opc1)">antonio.cabral@empresa.com</li>
+            <li id="opc2" class="opc_email" onclick="mudarEmailNaTela(opc2)">michael_jackson2010@empresa.com</li>
+            <li id="opc3" class="opc_email" onclick="mudarEmailNaTela(opc3)">joao.silva@empresa.com</li>
+            <li id="opc4" class="opc_email" onclick="mudarEmailNaTela(opc4)">maria_sena@empresa.com</li>
+            <li id="opc5" class="opc_email" onclick="mudarEmailNaTela(opc5)">jason.matador@empresa.com</li>
         </ul>
     </aside>
     <main>
@@ -35,7 +35,7 @@
             <div>
                 <input type="checkbox" name="cb1" id="cb1">
                 <label for="cb1">Notebook Acer intel I7 rtx4090</label>
-                <span>
+                <span class="caixa_quantidade">
                     <div class="qtde">1</div> 
                     Disponivel
                 </span>
@@ -43,7 +43,7 @@
             <div>
                 <input type="checkbox" name="cb2" id="cb2">
                 <label for="cb2">Wireless Mouse M348</label>
-                <span>
+                <span class="caixa_quantidade">
                     <div class="qtde">0</div> 
                     Disponivel
                 </span>
@@ -51,7 +51,7 @@
             <div>
                 <input type="checkbox" name="cb3" id="cb3">
                 <label for="cb3">Wireless Keyboard 7W65</label>
-                <span>
+                <span class="caixa_quantidade">
                     <div class="qtde">1</div> 
                     Disponivel
                 </span>
@@ -59,7 +59,7 @@
             <div>
                 <input type="checkbox" name="" id="cb4">
                 <label for="cb4">Iphone 15</label>
-                <span>
+                <span class="caixa_quantidade">
                     <div class="qtde">3</div> 
                     Disponiveis
                 </span>
@@ -67,7 +67,7 @@
             <div>
                 <input type="checkbox" name="cb5" id="cb5">
                 <label for="cb5">Notebook HP Elite x360</label>
-                <span>
+                <span class="caixa_quantidade">
                     <div class="qtde">2</div> 
                     Disponiveis
                 </span>
@@ -75,7 +75,7 @@
             <div>
                 <input type="checkbox" name="cb6" id="cb6">
                 <label for="cb6">Notebook HP Mad M360</label>
-                <span>
+                <span class="caixa_quantidade">
                     <div class="qtde">2</div> 
                     Disponiveis
                 </span>
@@ -83,7 +83,7 @@
             <div>
                 <input type="checkbox" name="cb6" id="cb7">
                 <label for="cb7">Notebook HP Mad M360</label>
-                <span>
+                <span class="caixa_quantidade">
                     <div class="qtde">2</div> 
                     Disponiveis
                 </span>
@@ -95,6 +95,6 @@
             <button id="bt-enviar">Enviar</button>
         </section>
     </main>
-    <script src="script/tela2.js"></script>
+    <script src="script/tela2.js" defer></script>
 </body>
 </html>

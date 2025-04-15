@@ -5,7 +5,7 @@
     --corSecundaria1--: #949ca3;
     --corSecundaria2--: #e4e5e6;
     --corSecundaria3--: #b8aca5;
-    --corSegundaria4--: #d8cfc9;
+    --corSecundaria4--: #d8cfc9;
 }
 
 *{
@@ -17,20 +17,39 @@ body{
     height: 100vh;
     width: 100vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--corSecundaria3--);
+    background-color: var(--corSecundaria4--);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 header{
-    height: 100%;
-    width: 500px;
     background-color: var(--corLogo--);
+    height: 100%;
+    border-radius: 0 10px 10px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly; 
+    position: absolute;
+    left: 0;
+    top: 0;
 }
+nav{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+}
+#menu-icon{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    border-radius: 50px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 ul{
     list-style-type: none;
     margin-top: 10px;
@@ -57,8 +76,8 @@ aside{
     background-color: var(--corSecundaria2--);
     height: 90%;
     width: 400px;
-    border-radius: 0 10px 10px 0;
-    box-shadow: 10px 10px var(--corLogo--);
+    border-radius: 10px;
+    box-shadow: 10px 10px var(--corSecundaria1--);
 }
 main{
     width: 70%;
