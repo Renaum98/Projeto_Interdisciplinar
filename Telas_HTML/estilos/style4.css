@@ -1,0 +1,68 @@
+:root {
+    --corLogo--: #455561;
+    --corFundo--: #ffff;
+    --corDetalhe--: #D71946;
+    --corSecundaria1--: #949ca3;
+    --corSecundaria2--: #e4e5e6;
+    --corSecundaria3--: #b8aca5;
+    --corSegundaria4--: #d8cfc9;
+}
+
+*{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+/*.header_table{
+    background-color: var(--corDetalhe--);
+    color: var(--corFundo--);
+}*/
+
+/*table{
+    border-collapse: collapse;
+    border: 1px solid;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 50px;
+ }
+
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 0.5rem;
+ }
+ */
+ 
+table{ 
+    border: 1px solid var(--corSecundaria1--);
+    border-radius: 13px; 
+    border-spacing: 0;
+    overflow: hidden;
+}
+table td, 
+table th { 
+    border-bottom: 1px solid var(--corSecundaria1--);
+    padding: 10px; 
+}
+table tr:last-child th{
+    border-bottom: none;
+}
+
+table tr:first-child{
+    background: var(--corDetalhe--);
+    color: var(--corFundo--);
+    
+}
+
+table tr:hover{
+    background-color: var(--corSecundaria1--);
+}
+
+table tr:first-child:hover{
+    background-color: var(--corDetalhe--);
+}
+
+
