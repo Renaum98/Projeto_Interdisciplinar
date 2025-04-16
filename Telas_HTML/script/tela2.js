@@ -82,17 +82,6 @@ if (window.location.pathname.includes('index.html')) {
     btEnviar.addEventListener('click', (e) => {
         e.preventDefault();
 
-        let itemIndisponivel = false;
-        quantidade.forEach((el) => {
-            if (parseInt(el.textContent) <= 0) {
-                itemIndisponivel = true;
-            }
-        });
-        if (itemIndisponivel) {
-            alert('Um dos itens selecionado não esta disponivel!');
-            return;
-        } //esta verificando se algum dos itens esta zerado
-    
         let email = document.querySelector('#email_exibicao strong')?.textContent.trim() || '';
         const checkboxesMarcados = document.querySelectorAll("#caixa_lista_itens input[type='checkbox']:checked");
         let itensSelecionados = [];

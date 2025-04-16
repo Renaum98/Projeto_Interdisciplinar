@@ -47,7 +47,7 @@ input[type=checkbox],
 div{
     cursor: pointer;
 }
-li:active,
+
 #caixa_lista_itens>div:active,
 #botoes>button:active{
     background-color: var(--corDetalhe--);
