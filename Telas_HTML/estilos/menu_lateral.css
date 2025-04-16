@@ -28,6 +28,7 @@ header{
     color: var(--corSecundaria3--);
     padding: 6px;
     position: absolute;
+    border-radius: 0 0 10px 10px;
     top: 0;
     left: 20px;
     cursor: pointer;
@@ -36,7 +37,7 @@ header{
     backdrop-filter: blur(10px);
     background-color: var(--corLogo--);
 }
-#menu-icon:active{
+#menu-icon:hover{
     background-color: var(--corDetalhe--);
 }
 
@@ -53,12 +54,17 @@ header{
     border-radius: 10px;
     padding: 5px;
 }
-#lista_menu_pai > li:hover{
-    background-color: var(--corSecundaria1--);
-    transition: 1s;
-}
 .lista_menu_filhos{
+    position: relative;
     color: var(--corFundo--);
     font-weight: 400;
     text-decoration: none;
+}
+.lista_menu_filhos:before{
+    position: relative;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: var(--corSecundaria4--);
 }

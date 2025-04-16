@@ -16,7 +16,7 @@
 body{
     height: 100vh;
     width: 100vw;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--corSecundaria4--);
     display: flex;
     justify-content: space-between;
@@ -36,11 +36,16 @@ li{
     padding: 5px 0;
     text-align: center;
 }
-li:hover,
-#caixa_lista_itens>div:hover{
+.opc_email:hover,
+#caixa_lista_itens> div:hover{
     background-color: var(--corSecundaria1--);
     color: var(--corSecundaria2--);
     transition: .2s;
+}
+label,
+input[type=checkbox],
+div{
+    cursor: pointer;
 }
 li:active,
 #caixa_lista_itens>div:active,
