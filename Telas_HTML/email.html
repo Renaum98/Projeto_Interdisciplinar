@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Solicitação de Ativos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f1ea;
+      padding: 20px;
+    }
+
+    .highlight {
+      background-color: #e04365;
+      color: white;
+      font-weight: bold;
+      padding: 4px 6px;
+      border-radius: 4px;
+    }
+
+    .box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+
+    .section-title {
+      background-color: #e04365;
+      color: white;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .disponivel {
+      color: green;
+      font-weight: bold;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+
+      cursor: pointer;
+    }
+
+    .btn-rejeitar {
+      background-color: #e04365;
+      color: white;
+    }
+
+    .btn-aceitar {
+      background-color: #14b866;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <p><span class="highlight">solange.arte@empresa.com</span> requisitou ativos para <span class="highlight">hugo.ino@empresa.com</span>:</p>
+
+  <div class="box">
+    <ul>
+      <li>Wireless Mouse M348 - <span class="disponivel">Disponíveis (10)</span></li>
+      <li>Wireless Keyboard 7W65 - <span 
+
+class="disponivel">Disponíveis (10)</span></li>
+      <li>iPhone 15 - <span class="disponivel">Disponíveis (1)</span></li>
+      <li>Notebook HP Elite x360 1040 G10 - <span class="disponivel">Disponíveis (10)</span></li>
+    </ul>
+  </div>
+
+  <p class="section-title">Ativos separados:</p>
+  <div class="box">
+    <ul>
+      <li>Wireless Mouse M348 - Número de patrimônio: 0007 - Serial: 123584697416</li>
+      <li>Wireless Keyboard 7W65 - Número de patrimônio: 0015 - Serial: 7854125954</li>
+      <li>iPhone 15 - Número de patrimônio: 0105 - Serial: 78ADH56954</li>
+      <li>Notebook HP Elite x360 1040 G10 - Número de patrimônio: 0098 - Serial: 78541741258</li>
+    </ul>
+  </div>
+
+  <div class="buttons">
+    <button class="btn btn-rejeitar">Rejeitar Solicitação</button>
+    <button class="btn btn-aceitar">Aceitar Solicitação</button>
+
+  </div>
+
+</body>
+</html>
