@@ -7,8 +7,6 @@ const opc6 = document.querySelector('#opc6');
 const opc7 = document.querySelector('#opc7');
 const opc8 = document.querySelector('#opc8');
 
-
-
 const quantidade = document.querySelectorAll('.qtde');
 const caixaComAQuantidade = document.querySelectorAll('.caixa_quantidade');
 const btSelecionarTodos = document.getElementById('bt-selecionar-todos');
@@ -19,8 +17,6 @@ const exibicaoEmailTela = document.querySelector('#email_exibicao');
 const menu = document.querySelector('header');
 const iconeMenu = document.getElementById('menu-icon');
 
-//Refiz o menu lateral
-// Abre o menu ao passar o mouse sobre o ícone
 iconeMenu.addEventListener("mouseenter", () => {
     menu.style.transform = "translateX(0)";  // Ação para mostrar o menu
     menu.style.transition = "transform 0.5s ease-in-out";  // Efeito de transição suave
