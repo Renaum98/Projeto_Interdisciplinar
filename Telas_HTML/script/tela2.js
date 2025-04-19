@@ -177,7 +177,70 @@ function carregarHistorico() {
     }
 }
 
+function initColumnFilters() {
+    const table = document.querySelector('table');
+    if (!table) return; // nada a filtrar
+  
+    const thead = table.querySelector('thead');
+    const tbody = table.querySelector('tbody');
+  
+    // (a) monta a linha de selects abaixo do header
+    const filterRow = document.createElement('tr');
+    filterRow.classList.add('filter-row');
+    thead.querySelectorAll('th').forEach((_, colIndex) => {
+      const th = document.createElement('th');
+      const sel = document.createElement('select');
+      sel.dataset.colIndex = colIndex;
+      // opção “Todos”
+      const allOpt = document.createElement('option');
+      allOpt.value = '';
+      allOpt.textContent = '-- Todos --';
+      sel.appendChild(allOpt);
+      th.appendChild(sel);
+      filterRow.appendChild(th);
+    });
+    thead.appendChild(filterRow);
+
+    const uniques = [];
+    thead.querySelectorAll('th').forEach((_, i) => { uniques[i] = new Set(); });
+    tbody.querySelectorAll('tr').forEach(tr =>
+      tr.querySelectorAll('td').forEach((td, i) =>
+        uniques[i].add(td.textContent.trim())
+      )
+    );
+
+    thead.querySelectorAll('select').forEach(sel => {
+        const col = sel.dataset.colIndex;
+        Array.from(uniques[col])
+          .sort((a,b)=>a.localeCompare(b,'pt-BR'))
+          .forEach(v=>{
+            const o = document.createElement('option');
+            o.value = v; o.textContent = v;
+            sel.appendChild(o);
+          });
+      });
+    
+      // (d) lógica de mostrar/ocultar linhas
+      function filtrar() {
+        const filtros = Array.from(thead.querySelectorAll('select'))
+                             .map(s => s.value);
+        tbody.querySelectorAll('tr').forEach(tr => {
+          const cells = tr.querySelectorAll('td');
+          const ok = filtros.every((f,i)=>
+            f==='' || cells[i].textContent.trim()===f
+          );
+          tr.style.display = ok ? '' : 'none';
+        });
+      }
+    
+      // (e) dispara o filtro sempre que mudar qualquer dropdown
+      thead.querySelectorAll('select')
+           .forEach(s => s.addEventListener('change', filtrar));
+    }
+
 // Carregar o histórico na página de histórico
 if (window.location.pathname.includes('tela4.html')) {
     carregarHistorico();
+
+    initColumnFilters();
 }
