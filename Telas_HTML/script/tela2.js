@@ -104,6 +104,18 @@ if (window.location.pathname.includes('index.html')) {
             alert("Preencha o e-mail e selecione pelo menos um item.");
             return;
         }
+
+        for (let checkbox of checkboxesMarcados) {
+            // Sobe até a DIV pai do checkbox e busca o .qtde dentro dela
+            const itemDiv = checkbox.closest('div');
+            const qtdeEl = itemDiv.querySelector('.qtde');
+            const qtde = parseInt(qtdeEl.textContent, 10);
+            
+            if (qtde === 0) {
+              alert("Não é possível selecionar itens com estoque 0.");
+              return;   // Interrompe TODO o processamento do envio
+            }
+          }
     
         const registro = {
             usuario: listaNomes,  // Isso deve ser um array de e-mails, sempre.
