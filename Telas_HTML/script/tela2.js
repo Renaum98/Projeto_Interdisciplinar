@@ -253,6 +253,5 @@ function initColumnFilters() {
 // Carregar o histórico na página de histórico
 if (window.location.pathname.includes('tela4.html')) {
     carregarHistorico();
-
     initColumnFilters();
 }
