@@ -134,7 +134,7 @@ input[type="checkbox"]:checked:before{
     border-radius: 10px;
 }
 
-@media screen and (max-width:767px),(orientation:portrait) {
+@media screen and (max-width:768px),(orientation:portrait) {
     body{
         font-size: .7rem;
         display: flex;
@@ -163,5 +163,9 @@ input[type="checkbox"]:checked:before{
         font-size: 9pt;
         display: flex;
         justify-content: space-between;
+    }
+    #botoes>button{
+        width: 100px;
+        height: 60px;
     }
 }
