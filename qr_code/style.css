@@ -33,6 +33,7 @@ main{
     width: 95%;
     margin: auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.232);
+    
     display: flex;
     justify-content: center;
     background-color: rgb(255, 255, 255);
