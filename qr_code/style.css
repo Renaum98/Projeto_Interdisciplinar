@@ -9,7 +9,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: auto;
-    background-image: linear-gradient(to bottom,#FF8400,#e97800);
+    background: rgb(32, 70, 55);
 }
 header{
     height: 100px;
@@ -56,19 +56,13 @@ main{
     width: 80%;
     max-width: 400px;
     padding: 10px;
-    background-image: radial-gradient(circle,#FF8400,#F5821F); 
+    background: rgb(32, 70, 55); 
     font-size: 1.2rem;
     font-weight: 200;
     border: 2px solid lightgray;
     border-radius: 30px;
     color: white;
     text-decoration: none;
-}
-.botao:hover {
-    background-image: radial-gradient(circle,#e97800,#FF8400); 
-    transform: scale(1.1);
-    transition: 0.5s;
-    cursor: pointer;
 }
 .botao:active {
     transform: scale(1.0);
